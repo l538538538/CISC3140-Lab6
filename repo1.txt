@@ -1,0 +1,17 @@
+diff --git a/HelloWorld.java b/HelloWorld.java
+index 7ea5989..97904e6 100644
+--- a/HelloWorld.java
++++ b/HelloWorld.java
+@@ -1,5 +1,11 @@
++import java.time.format.DateTimeFormatter;
++import java.time.LocalDateTime;
++
+ class HelloWorld {
+     public static void main(String[] args) {
+-        System.out.println("Hello World!"); // Display "Hello World!"
++        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
++       LocalDateTime now = LocalDateTime.now();
++       System.out.println("Hello World!"); // Display "Hello World!"
++       System.out.println(dtf.format(now));
+     }
+ }

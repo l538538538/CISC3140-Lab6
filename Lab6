@@ -1,0 +1,265 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2020.10.02 14:57:17 =~=~=~=~=~=~=~=~=~=~=~=
+login as: lng
+Access to Brooklyn College computers is restricted to authorized users
+        and approved educational and research purposes, only.
+lng@146.245.252.28's password: 
+Last login: Fri Oct  2 14:22:48 2020 from pool-74-108-50-178.nycmny.fios.verizon.net
+]0;lng@sol28:~[?1034h[lng@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mLab5[0m  [01;34msvn[0m  [01;34mtest[0m  [01;34mtest2[0m
+]0;lng@sol28:~[lng@sol28 ~]$ mkdir RepoMeta
+]0;lng@sol28:~[lng@sol28 ~]$ mkdir repo1
+]0;lng@sol28:~[lng@sol28 ~]$ cd repo1
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ cp ../example/HelloWorld.java .
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ git config --global user.name "Lawrence Ng"
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ git config --global user.email "Lawrence.Ng2013@gmail.com"
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ git init
+Initialized empty Git repository in /users1/st/lng/repo1/.git/
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ ls -la
+total 16
+drwxr-xr-x.  3 lng cis 4096 Oct  2 14:58 [0m[01;34m.[0m
+drwx--x--x. 15 lng cis 4096 Oct  2 14:58 [01;34m..[0m
+drwxr-xr-x.  7 lng cis 4096 Oct  2 14:58 [01;34m.git[0m
+-rw-r--r--.  1 lng cis  142 Oct  2 14:58 HelloWorld.java
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ git add HelloWorld.java
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   HelloWorld.java
+#
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ git commit -m "Edit begin"
+[master (root-commit) 75f7786] Edit begin
+ 1 file changed, 5 insertions(+)
+ create mode 100644 HelloWorld.java
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ vi HelloWorld.java
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"HelloWorld.java" 5L, 142C[>c[1;1H[30m[43mclass HelloWorld { 
+    public static void main(String[] args) { 
+        System.out.println("Hello World!"); // Display "Hello World!" 
+    } 
+} [m
+[1m[34m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll[1;1H[?12l[?25h[?25l[24;1H[1m-- INSERT --[m[24;13H[K[24;63H1,1[11CAll[1;1H[?12l[?25h[?25l[2;23r[2;1H[L[1;24r[1;1H[30m[43m [m[1;2H[K[2;1H[30m[43mclass HelloWorld { [m[24;63H[K[24;63H2,1[11CAll[2;1H[?12l[?25h[?25l[3;23r[3;1H[L[1;24r[2;1H[30m[43m [m[2;2H[K[3;1H[30m[43mclass HelloWorld { [m[24;63H[K[24;63H3,1[11CAll[3;1H[?12l[?25h[?25l[24;63H2[2;1H[?12l[?25h[?25l[24;63H1[1;1H[?12l[?25h[?25l[2;23r[2;1H[2L[1;24r[1;1H[30m[43mimport java.time.format.DateTimeFormatter;   
+import java.time.LocalDateTime;  [m[24;63H[K[24;63H3,1[11CAll[3;1H[?12l[?25h[?25l[24;63H4[4;1H[?12l[?25h[?25l[3;23r[23;1H
+[1;24r[3;1H[K[23;1H[1m[34m~                                                                               [m[24;63H[K[24;63H3,1[11CAll[3;1H[?12l[?25h[?25l[24;63H4[4;1H[?12l[?25h[?25l[24;63H5[5;1H[?12l[?25h[?25l[24;63H6[6;1H[?12l[?25h[?25l[24;63H7[7;1H[?12l[?25h[?25l[24;65H2[7;2H[?12l[?25h[?25l[24;65H3[7;3H[?12l[?25h[?25l[24;65H4[7;4H[?12l[?25h[?25l[5;44H[46m{[7;5H}[m[24;65H5[7;5H[?12l[?25h[?25l[7;6H[K[24;65H6[7;6H[?12l[?25h[?25l[5;44H[30m[43m{[7;5H} [m[24;63H6[6;6H[?12l[?25h[?25l[24;65H7[6;7H[?12l[?25h[?25l[24;65H8[6;8H[?12l[?25h[?25l[24;65H9[6;9H[?12l[?25h[?25l[7;23r[7;1H[L[1;24r[6;9H[30m[43m [m[6;10H[K[7;1H[30m[43mSystem.out.println("Hello World!"); // Display "Hello World!" [m[24;63H[K[24;63H7,1[11CAll[7;1H[?12l[?25h[?25l[30m[43m        System.out.println("Hello World!"); // Display "Hello World!" [m[24;65H2-9[7;9H[?12l[?25h[?25l[24;63H6,9  [6;9H[?12l[?25h[?25l[7;23r[7;1H[2L[1;24r[6;9H[30m[43mDateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:sss[7;1H");   
+LocalDateTime now = LocalDateTime.now();[m[24;63H[K[24;63H7,41[10CAll[8;41H[?12l[?25h[27m[m[H[2J[?25l[1;1H[30m[43mimport java.time.format.DateTimeFormatter;   
+import java.time.LocalDateTime;  
+ 
+class HelloWorld { 
+    public static void main(String[] args) { 
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");   
+LocalDateTime now = LocalDateTime.now();
+        System.out.println("Hello World!"); // Display "Hello World!" 
+    } 
+} [m
+[1m[34m~                                                                                              [12;1H~                                                                                              [13;1H~                                                                                              [14;1H~                                                                                              [15;1H~                                                                                              [16;1H~                                                                                              [17;1H~                                                                                              [18;1H~                                                                                              [19;1H~                                                                                              [20;1H~                                                                                              [21;1H~                                                                                              [22;1H~                                                                                              [23;1H~                                                                                              [24;1H~                                                                                              [25;1H~                                                                                              [26;1H~                                                                                              [m[27;1H[1m-- INSERT --[m[65C7,41[10CAll[7;41H[?12l[?25h[?25l[46m()[m[1C[30m[43m [m[27;81H0[7;40H[?12l[?25h[?25l[27;80H39[7;39H[?12l[?25h[?25l[27;81H8[7;38H[?12l[?25h[?25l[30m[43m()[m[27;81H7[7;37H[?12l[?25h[?25l[27;81H6[7;36H[?12l[?25h[?25l[27;81H5[7;35H[?12l[?25h[?25l[27;81H4[7;34H[?12l[?25h[?25l[27;81H3[7;33H[?12l[?25h[?25l[27;81H2[7;32H[?12l[?25h[?25l[27;81H1[7;31H[?12l[?25h[?25l[27;81H0[7;30H[?12l[?25h[?25l[27;80H29[7;29H[?12l[?25h[?25l[27;81H8[7;28H[?12l[?25h[?25l[27;81H7[7;27H[?12l[?25h[?25l[27;81H6[7;26H[?12l[?25h[?25l[27;81H5[7;25H[?12l[?25h[?25l[27;81H4[7;24H[?12l[?25h[?25l[27;81H3[7;23H[?12l[?25h[?25l[27;81H2[7;22H[?12l[?25h[?25l[27;81H1[7;21H[?12l[?25h[?25l[27;81H0[7;20H[?12l[?25h[?25l[27;80H19[7;19H[?12l[?25h[?25l[27;81H8[7;18H[?12l[?25h[?25l[27;81H7[7;17H[?12l[?25h[?25l[27;81H6[7;16H[?12l[?25h[?25l[27;81H5[7;15H[?12l[?25h[?25l[27;81H4[7;14H[?12l[?25h[?25l[27;81H3[7;13H[?12l[?25h[?25l[27;81H2[7;12H[?12l[?25h[?25l[27;81H1[7;11H[?12l[?25h[?25l[27;81H0[7;10H[?12l[?25h[?25l[27;80H9 [7;9H[?12l[?25h[?25l[27;80H8[7;8H[?12l[?25h[?25l[27;80H7[7;7H[?12l[?25h[?25l[27;80H6[7;6H[?12l[?25h[?25l[27;80H5[7;5H[?12l[?25h[?25l[27;80H4[7;4H[?12l[?25h[?25l[27;80H3[7;3H[?12l[?25h[?25l[27;80H2[7;2H[?12l[?25h[?25l[27;80H1[7;1H[?12l[?25h[?25l[30m[43m        LocalDateTime now = LocalDateTime.now(); [m[27;80H2-9[7;9H[?12l[?25h[?25l[27;78H8[8;9H[?12l[?25h[?25l[27;80H3-10[8;10H[?12l[?25h[?25l[27;80H4-11[8;11H[?12l[?25h[?25l[27;80H5-12[8;12H[?12l[?25h[?25l[27;80H6-13[8;13H[?12l[?25h[?25l[27;80H7-14[8;14H[?12l[?25h[?25l[27;80H8-15[8;15H[?12l[?25h[?25l[27;80H9-16[8;16H[?12l[?25h[?25l[27;80H10-17[8;17H[?12l[?25h[?25l[27;81H1-18[8;18H[?12l[?25h[?25l[27;81H2-19[8;19H[?12l[?25h[?25l[27;81H3-20[8;20H[?12l[?25h[?25l[27;81H4-21[8;21H[?12l[?25h[?25l[27;81H5-22[8;22H[?12l[?25h[?25l[27;81H6-23[8;23H[?12l[?25h[?25l[27;81H7-24[8;24H[?12l[?25h[?25l[27;81H8-25[8;25H[?12l[?25h[?25l[27;81H9-26[8;26H[?12l[?25h[?25l[1C[46m([14C)[m[27;80H20-27[8;27H[?12l[?25h[?25l[27;81H1-28[8;28H[?12l[?25h[?25l[30m[43m([14C)[m[27;81H2-29[8;29H[?12l[?25h[?25l[27;81H3-30[8;30H[?12l[?25h[?25l[27;81H4-31[8;31H[?12l[?25h[?25l[27;81H5-32[8;32H[?12l[?25h[?25l[27;81H6-33[8;33H[?12l[?25h[?25l[27;81H7-34[8;34H[?12l[?25h[?25l[27;81H8-35[8;35H[?12l[?25h[?25l[27;81H9-36[8;36H[?12l[?25h[?25l[27;80H30-37[8;37H[?12l[?25h[?25l[27;81H1-38[8;38H[?12l[?25h[?25l[27;81H2-39[8;39H[?12l[?25h[?25l[27;81H3-40[8;40H[?12l[?25h[?25l[27;81H4-41[8;41H[?12l[?25h[?25l[8;27H[46m([14C)[m[27;81H5-42[8;42H[?12l[?25h[?25l[27;81H6-43[8;43H[?12l[?25h[?25l[8;27H[30m[43m([14C)[m[27;81H7-44[8;44H[?12l[?25h[?25l[27;81H8-45[8;45H[?12l[?25h[?25l[27;81H9-46[8;46H[?12l[?25h[?25l[27;80H40-47[8;47H[?12l[?25h[?25l[27;81H1-48[8;48H[?12l[?25h[?25l[27;81H2-49[8;49H[?12l[?25h[?25l[27;81H3-50[8;50H[?12l[?25h[?25l[27;81H4-51[8;51H[?12l[?25h[?25l[27;81H5-52[8;52H[?12l[?25h[?25l[27;81H6-53[8;53H[?12l[?25h[?25l[27;81H7-54[8;54H[?12l[?25h[?25l[27;81H8-55[8;55H[?12l[?25h[?25l[27;81H9-56[8;56H[?12l[?25h[?25l[27;80H50-57[8;57H[?12l[?25h[?25l[27;81H1-58[8;58H[?12l[?25h[?25l[27;81H2-59[8;59H[?12l[?25h[?25l[27;81H3-60[8;60H[?12l[?25h[?25l[27;80H61-68[8;68H[?12l[?25h[?25l[27;81H2-69[8;69H[?12l[?25h[?25l[27;81H3-70[8;70H[?12l[?25h[?25l[9;26r[9;1H[L[1;27r[27;78H[K[27;78H9,1[11CAll[9;1H[?12l[?25h[?25l[30m[43m        [m[27;80H2-9[9;9H[?12l[?25h[?25l[30m[43mSystem.out.println(dtf.format(now));[m[27;80H38-45[9;45H[?12l[?25h[27;1H[K[9;44H[?25l[27;78H9,37-44[7CAll[9;44H[?12l[?25h[?25l[27;78H[K[27;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"HelloWorld.java" 11L, 380C written
+[?1l>[?12l[?25h[?1049l]0;lng@sol28:~/repo1[lng@sol28 repo1]$ javac HelloWorld.java && java HelloWorld
+Hello World!
+2020/10/02 15:00:20
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ git commit -m "Edit End"
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   HelloWorld.java
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	HelloWorld.class
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ git diff 
+[?1h=diff --git a/HelloWorld.java b/HelloWorld.java[m
+index 7ea5989..97904e6 100644[m
+--- a/HelloWorld.java[m
++++ b/HelloWorld.java[m
+@@ -1,5 +1,11 @@[m
++import java.time.format.DateTimeFormatter;  [m
++import java.time.LocalDateTime; [m
++[m
+ class HelloWorld {[m
+     public static void main(String[] args) {[m
+-        System.out.println("Hello World!"); // Display "Hello World!"[m
++        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  [m
++       LocalDateTime now = LocalDateTime.now();[m
++       System.out.println("Hello World!"); // Display "Hello World!"[m
++       System.out.println(dtf.format(now));[m
+     }[m
+ }[m
+[K[?1l>]0;lng@sol28:~/repo1[lng@sol28 repo1]$ git log
+[?1h=commit 75f778698b3a8f1b742027a3b1a3354fde1c9737[m
+Author: Lawrence Ng <Lawrence.Ng2013@gmail.com>[m
+Date:   Fri Oct 2 14:58:59 2020 -0400[m
+[m
+    Edit begin[m
+[K[?1l>]0;lng@sol28:~/repo1[lng@sol28 repo1]$ touch ../RepoMeta/repo1.txt
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ git diff > ../RepoMeta/repo1.txt 
+]0;lng@sol28:~/repo1[lng@sol28 repo1]$ cd
+]0;lng@sol28:~[lng@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mLab5[0m  [01;34mrepo1[0m  [01;34mRepoMeta[0m  [01;34msvn[0m  [01;34mtest[0m  [01;34mtest2[0m
+]0;lng@sol28:~[lng@sol28 ~]$ cd RepoMeta
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ ls
+repo1.txt
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ cd
+]0;lng@sol28:~[lng@sol28 ~]$ rm -r repo1
+rm: remove write-protected regular file ‘repo1/.git/objects/f7/e39e6cc471e8e7b46cb23c2f167506333d9aee’? Y
+rm: remove write-protected regular file ‘repo1/.git/objects/75/f778698b3a8f1b742027a3b1a3354fde1c9737’? Y
+rm: remove write-protected regular file ‘repo1/.git/objects/7e/a5989474229fb03a6eaf938848ae4fcae7f7de’? Y
+]0;lng@sol28:~[lng@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mLab5[0m  [01;34mRepoMeta[0m  [01;34msvn[0m  [01;34mtest[0m  [01;34mtest2[0m
+]0;lng@sol28:~[lng@sol28 ~]$ clear
+[3;J[H[2J]0;lng@sol28:~[lng@sol28 ~]$ mkdir repo2
+]0;lng@sol28:~[lng@sol28 ~]$ cd repo2
+]0;lng@sol28:~/repo2[lng@sol28 repo2]$ svnadmin create .
+]0;lng@sol28:~/repo2[lng@sol28 repo2]$ ls
+[0m[01;34mconf[0m  [01;34mdb[0m  format  [01;34mhooks[0m  [01;34mlocks[0m  README.txt
+]0;lng@sol28:~/repo2[lng@sol28 repo2]$ 
+]0;lng@sol28:~/repo2[lng@sol28 repo2]$ svn co https://github.com/l538538538/Test .
+A    branches
+A    trunk
+Checked out revision 2.
+]0;lng@sol28:~/repo2[lng@sol28 repo2]$ mkdir Sample
+]0;lng@sol28:~/repo2[lng@sol28 repo2]$ cd Sample
+]0;lng@sol28:~/repo2/Sample[lng@sol28 Sample]$ touch file.txt
+]0;lng@sol28:~/repo2/Sample[lng@sol28 Sample]$ cd ..
+]0;lng@sol28:~/repo2[lng@sol28 repo2]$ svn add Sample
+A         Sample
+A         Sample/file.txt
+]0;lng@sol28:~/repo2[lng@sol28 repo2]$ cd Sample
+]0;lng@sol28:~/repo2/Sample[lng@sol28 Sample]$ vi file.txt
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;27r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[27;1H"file.txt" 0L, 0C[>c[2;1H[1m[34m~                                                                                              [3;1H~                                                                                              [4;1H~                                                                                              [5;1H~                                                                                              [6;1H~                                                                                              [7;1H~                                                                                              [8;1H~                                                                                              [9;1H~                                                                                              [10;1H~                                                                                              [11;1H~                                                                                              [12;1H~                                                                                              [13;1H~                                                                                              [14;1H~                                                                                              [15;1H~                                                                                              [16;1H~                                                                                              [17;1H~                                                                                              [18;1H~                                                                                              [19;1H~                                                                                              [20;1H~                                                                                              [21;1H~                                                                                              [22;1H~                                                                                              [23;1H~                                                                                              [24;1H~                                                                                              [25;1H~                                                                                              [26;1H~                                                                                              [m[27;78H0,0-1[9CAll[1;1H[?12l[?25h[?25l[27;1H[1m-- INSERT --[m[27;13H[K[27;78H0,1[11CAll[1;1H[?12l[?25h[?25l[30m[43mA[m[27;78H1,2[1;2H[?12l[?25h[?25l[30m[43md[m[27;80H3[1;3H[?12l[?25h[?25l[30m[43md[m[27;80H4[1;4H[?12l[?25h[?25l[30m[43mi[m[27;80H5[1;5H[?12l[?25h[?25l[30m[43mn[m[27;80H6[1;6H[?12l[?25h[?25l[30m[43mg[m[27;80H7[1;7H[?12l[?25h[?25l[30m[43m [m[27;80H8[1;8H[?12l[?25h[?25l[30m[43ml[m[27;80H9[1;9H[?12l[?25h[?25l[30m[43mi[m[27;80H10[1;10H[?12l[?25h[?25l[30m[43mn[m[27;81H1[1;11H[?12l[?25h[?25l[30m[43me[m[27;81H2[1;12H[?12l[?25h[?25l[30m[43m [m[27;81H3[1;13H[?12l[?25h[27;1H[K[?25l[27;78H1,12[10CAll[1;12H[?12l[?25h[?25l[27;1H[1m-- INSERT --[m[27;78H[K[27;78H1,1[11CTop[1;26r[1;1H[L[1;27r[1;1H[30m[43mq[m[27;78H[K[27;78H1,2[11CAll[1;2H[?12l[?25h[?25l[1;1H[K[27;80H1[1;1H[?12l[?25h[?25l[27;78H2[2;1H[?12l[?25h[?25l[1;1H[30m[43mAdding line  [m
+[1m[34m~                                                                                              [m[27;78H1[1;1H[?12l[?25h[?25l[27;80H2[1;2H[?12l[?25h[?25l[27;80H3[1;3H[?12l[?25h[?25l[27;80H4[1;4H[?12l[?25h[?25l[27;80H5[1;5H[?12l[?25h[?25l[27;80H6[1;6H[?12l[?25h[?25l[27;80H7[1;7H[?12l[?25h[?25l[27;80H8[1;8H[?12l[?25h[?25l[27;80H9[1;9H[?12l[?25h[?25l[27;80H10[1;10H[?12l[?25h[?25l[27;81H1[1;11H[?12l[?25h[?25l[27;81H2[1;12H[?12l[?25h[?25l[27;81H3[1;13H[?12l[?25h[?25l[30m[43m1[m[27;81H4[1;14H[?12l[?25h[?25l[30m[43m [m[2;1H[K[27;78H2,1 [2;1H[?12l[?25h[?25l[30m[43m [m[3;1H[K[27;78H3[3;1H[?12l[?25h[?25l[30m[43mA[m[27;80H2[3;2H[?12l[?25h[?25l[30m[43md[m[27;80H3[3;3H[?12l[?25h[?25l[30m[43md[m[27;80H4[3;4H[?12l[?25h[?25l[30m[43mi[m[27;80H5[3;5H[?12l[?25h[?25l[30m[43mn[m[27;80H6[3;6H[?12l[?25h[?25l[30m[43mg[m[27;80H7[3;7H[?12l[?25h[?25l[30m[43m [m[27;80H8[3;8H[?12l[?25h[?25l[30m[43ml[m[27;80H9[3;9H[?12l[?25h[?25l[30m[43mi[m[27;80H10[3;10H[?12l[?25h[?25l[30m[43mn[m[27;81H1[3;11H[?12l[?25h[?25l[30m[43me[m[27;81H2[3;12H[?12l[?25h[?25l[30m[43m [m[27;81H3[3;13H[?12l[?25h[?25l[30m[43m2[m[27;81H4[3;14H[?12l[?25h[?25l[30m[43m [m[4;1H[K[27;78H4,1 [4;1H[?12l[?25h[?25l[30m[43m [m[5;1H[K[27;78H5[5;1H[?12l[?25h[?25l[30m[43mA[m[27;80H2[5;2H[?12l[?25h[?25l[30m[43md[m[27;80H3[5;3H[?12l[?25h[?25l[30m[43md[m[27;80H4[5;4H[?12l[?25h[?25l[30m[43mi[m[27;80H5[5;5H[?12l[?25h[?25l[30m[43mn[m[27;80H6[5;6H[?12l[?25h[?25l[30m[43mg[m[27;80H7[5;7H[?12l[?25h[?25l[30m[43m [m[27;80H8[5;8H[?12l[?25h[?25l[30m[43ml[m[27;80H9[5;9H[?12l[?25h[?25l[30m[43mine [m[27;80H13[5;13H[?12l[?25h[?25l[30m[43m3[m[27;81H4[5;14H[?12l[?25h[27;1H[K[5;13H[?25l[27;78H5,13[10CAll[5;13H[?12l[?25h[?25l[27;78H[K[27;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"file.txt" 5L, 44C written
+[?1l>[?12l[?25h[?1049l]0;lng@sol28:~/repo2/Sample[lng@sol28 Sample]$ cd ..
+]0;lng@sol28:~/repo2[lng@sol28 repo2]$ svn diff Sample/file.txt
+Index: Sample/file.txt
+===================================================================
+--- Sample/file.txt	(revision 0)
++++ Sample/file.txt	(working copy)
+@@ -0,0 +1,5 @@
++Adding line 1
++
++Adding line 2
++
++Adding line 3
+]0;lng@sol28:~/repo2[lng@sol28 repo2]$ svn diff > ../RepoMeta/repo2.txt
+]0;lng@sol28:~/repo2[lng@sol28 repo2]$ cd
+]0;lng@sol28:~[lng@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mLab5[0m  [01;34mrepo2[0m  [01;34mRepoMeta[0m  [01;34msvn[0m  [01;34mtest[0m  [01;34mtest2[0m
+]0;lng@sol28:~[lng@sol28 ~]$ cd Repo[K[K[K[K[K[K[Kls RepoMeta
+repo1.txt  repo2.txt
+]0;lng@sol28:~[lng@sol28 ~]$ cat Re[K[K[K[K[K[Kcd RepoMeta
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ ls
+repo1.txt  repo2.txt
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ car[Kt repo1.txt
+diff --git a/HelloWorld.java b/HelloWorld.java
+index 7ea5989..97904e6 100644
+--- a/HelloWorld.java
++++ b/HelloWorld.java
+@@ -1,5 +1,11 @@
++import java.time.format.DateTimeFormatter;  
++import java.time.LocalDateTime; 
++
+ class HelloWorld {
+     public static void main(String[] args) {
+-        System.out.println("Hello World!"); // Display "Hello World!"
++        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
++	LocalDateTime now = LocalDateTime.now();
++	System.out.println("Hello World!"); // Display "Hello World!"
++	System.out.println(dtf.format(now));
+     }
+ }
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ cat repo1.txt[1P.txt2.txt[C[C[C[C
+Index: Sample/file.txt
+===================================================================
+--- Sample/file.txt	(revision 0)
++++ Sample/file.txt	(working copy)
+@@ -0,0 +1,5 @@
++Adding line 1
++
++Adding line 2
++
++Adding line 3
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ cd
+]0;lng@sol28:~[lng@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mLab5[0m  [01;34mrepo2[0m  [01;34mRepoMeta[0m  [01;34msvn[0m  [01;34mtest[0m  [01;34mtest2[0m
+]0;lng@sol28:~[lng@sol28 ~]$ rm -r repo2
+rm: remove write-protected regular file ‘repo2/db/revprops/0/0’? Y
+rm: remove write-protected regular file ‘repo2/db/revs/0/0’? Y
+rm: remove write-protected regular file ‘repo2/db/format’? Y
+rm: remove write-protected regular file ‘repo2/format’? Y
+]0;lng@sol28:~[lng@sol28 ~]$ cd RepoMeta
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ ls
+repo1.txt  repo2.txt
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git init
+Initialized empty Git repository in /users1/st/lng/RepoMeta/.git/
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git add repo1.txt
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git add repo2.txt
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git commit -m "repo text files push"[C[C[C[C[C
+[master (root-commit) 404f68c] repo text files push
+ 2 files changed, 27 insertions(+)
+ create mode 100644 repo1.txt
+ create mode 100644 repo2.txt
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git remote add origin git@github.com:l538538538/CISC3140-Lab6.git
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address '140.82.113.4' to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ [K[lng@sol28 RepoMeta]$ clear
+[3;J[H[2J]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git remote add origin git@github.com:l538538538/CISC3140-Lab6.git
+fatal: remote origin already exists.
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address '140.82.112.4' to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git remote add origin git@github.com:l538538538/CISC3140-Lab6.git
+fatal: remote origin already exists.
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git push -u origin main
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git branch -M main
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git remote add origin git@github.com:l538538538/CISC3140-Lab6.git
+fatal: remote origin already exists.
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git push -u origin main
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ ls -a
+[0m[01;34m.[0m  [01;34m..[0m  [01;34m.git[0m  repo1.txt  repo2.txt
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ ls -la
+total 20
+drwxr-xr-x.  3 lng cis 4096 Oct  2 15:07 [0m[01;34m.[0m
+drwx--x--x. 14 lng cis 4096 Oct  2 15:06 [01;34m..[0m
+drwxr-xr-x.  8 lng cis 4096 Oct  2 15:12 [01;34m.git[0m
+-rw-r--r--.  1 lng cis  600 Oct  2 15:01 repo1.txt
+-rw-r--r--.  1 lng cis  224 Oct  2 15:05 repo2.txt
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ chown -R [K[K[K[K[K[K[K[K[Kgit push -u origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git remote add origin git@github.com:l538538538/CISC3140-Lab6.git
+fatal: remote origin already exists.
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git branch -M main
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ git push -u origin main
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;lng@sol28:~/RepoMeta[lng@sol28 RepoMeta]$ exit
+logout
